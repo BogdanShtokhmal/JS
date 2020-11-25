@@ -377,3 +377,46 @@ wrap.style.width='60%';
 // 2й - оставляет старше 29 лет включительно
 // 3й - оставляет тех у кого город киев
 // Данные выводить в документ
+/*
+let content=document.getElementById('content');
+let div=document.createElement('div');
+let input1=document.createElement('input');
+let input2=document.createElement('input');
+let input3=document.createElement('input');
+let label1=document.createElement('label');
+let label2=document.createElement('label');
+let label3=document.createElement('label');
+let btn=document.createElement('button');
+let div1=document.createElement('div');
+let div0=document.createElement('div');
+
+label1.innerText='со статусом false';
+label2.innerText='старше 29 лет';
+label3.innerText='у кого город киев';
+
+btn.innerText='Фільтр';
+
+input1.type='checkbox';
+input2.type='checkbox';
+input3.type='checkbox';
+
+div0.innerText=JSON.stringify(usersWithAddress);
+div.appendChild(div0);
+div.appendChild(label1);
+div.appendChild(input1);
+div.appendChild(label2);
+div.appendChild(input2);
+div.appendChild(label3);
+div.appendChild(input3);
+div.appendChild(btn);
+content.appendChild(div);
+
+btn.onclick=()=>{
+    let mas=JSON.parse(JSON.stringify(usersWithAddress));
+    if(input1.checked)mas=mas.filter(value => !value.status);
+    if(input2.checked)mas=mas.filter(value => value.age>29);
+    if(input3.checked)mas=mas.filter(value => value.address.city='Kyiv');
+    div1.innerText=JSON.stringify(mas);
+}
+div.appendChild(div1);
+*/
